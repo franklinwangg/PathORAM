@@ -1,0 +1,9 @@
+    print("Writing block 2 with data 'Hello ORAM'")
+    client.access("write", 2, "Hello ORAM")
+    time.sleep(1)
+    print("Reading block 2")
+    data = client.access("read", 2)
+    print("Read data:", data)
+
+
+    
